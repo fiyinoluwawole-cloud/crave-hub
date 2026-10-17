@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CraveHub | Checkout</title>
+
+    <link rel="stylesheet" href="checkout.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Crave<span>Hub</span></div>
+
+      <a href="home.html">
+        <i class="fa-solid fa-arrow-left"></i>
+        Back to Menu
+      </a>
+    </nav>
+
+    <main class="checkout-container">
+      <h1>Checkout</h1>
+
+      <p>Complete your order below.</p>
+
+      <div class="checkout-content">
+        <section class="customer-details">
+          <h2>Delivery Information</h2>
+
+          <label> Full Name </label>
+
+          <input
+            type="text"
+            id="customerName"
+            placeholder="Enter your full name"
+          />
+
+          <small id="nameError"></small>
+
+          <label> Phone Number </label>
+
+          <input
+            type="tel"
+            id="customerPhone"
+            placeholder="Enter your phone number"
+          />
+
+          <small id="phoneError"></small>
+
+          <label> Delivery Address </label>
+
+          <textarea
+            id="customerAddress"
+            placeholder="Enter your delivery address"
+          ></textarea>
+
+          <small id="addressError"></small>
+
+          <button id="placeOrderBtn">Place Order</button>
+        </section>
+
+        <section class="order-summary">
+          <h2>Your Order</h2>
+
+          <div id="checkoutItems"></div>
+
+          <div class="checkout-prices">
+            <div class="price-row">
+              <span> Subtotal </span>
+
+              <strong id="checkoutSubtotal"> ₦0 </strong>
+            </div>
+
+            <div class="price-row">
+              <span> Delivery Fee </span>
+
+              <strong id="deliveryFee"> ₦1,000 </strong>
+            </div>
+
+            <div class="checkout-total">
+              <span> Total </span>
+
+              <strong id="checkoutTotal"> ₦0 </strong>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <script src="checkout.js"></script>
+  </body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CraveHub | Menu</title>
+
+    <link rel="stylesheet" href="home.css">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+
+</head>
+<body>
+    <nav class="navbar">
+
+        <div class="logo">
+            Crave<span>Hub</span>
+        </div>
+
+
+        <a href="#" class="cart">
+
+    <div class="cart-icon" id="cartIcon">
+
+        <i class="fa-solid fa-cart-shopping"></i>
+
+        <span id="cartCount">0</span>
+
+    </div>
+
+</a>
+
+    </nav>
+
+    <section class="home-hero">
+
+        <div class="hero-text">
+
+            <p class="welcome">
+                WELCOME TO CRAVEHUB
+            </p>
+
+            <h1>
+
+                What are you
+                <span>craving today?</span>
+
+            </h1>
+
+            <p class="hero-description">
+
+                Discover delicious meals, choose your favorite,
+                and get them delivered right to your doorstep.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- FOOD SECTION -->
+
+    <section class="food-section">
+
+
+        <!-- SEARCH -->
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for your favorite food..."
+            >
+
+            <button>
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+        </div>
+
+
+
+        <!-- CATEGORIES -->
+
+        <div class="categories">
+
+            <h2>
+                Categories
+            </h2>
+
+
+            <div class="category-buttons">
+
+    <button class="category active" data-category="all">
+        All
+    </button>
+
+    <button class="category" data-category="Beef">
+        Beef
+    </button>
+
+    <button class="category" data-category="Chicken">
+        Chicken
+    </button>
+
+    <button class="category" data-category="Dessert">
+        Dessert
+    </button>
+
+    <button class="category" data-category="Pasta">
+        Pasta
+    </button>
+
+    <button class="category" data-category="Seafood">
+        Seafood
+    </button>
+
+    <button class="category" data-category="Vegan">
+        Vegan
+    </button>
+
+    <button class="category" data-category="Vegetarian">
+        Vegetarian
+    </button>
+
+</div>
+
+        </div>
+
+        <!-- FOOD HEADING -->
+
+        <div class="food-heading">
+
+            <div>
+                <p>
+                    EXPLORE OUR MENU
+                </p>
+
+                <h2>
+                    Popular Today
+                </h2>
+            </div>
+
+
+            <button id="viewAllBtn">
+                View All
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+
+
+        <!-- FOOD CONTAINER -->
+
+        <div
+            class="food-container"
+            id="foodContainer"
+        ></div>
+
+    </section>
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="cart-panel" id="cartPanel">
+
+    <div class="cart-header">
+
+        <h2>Your Cart</h2>
+
+        <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems">
+
+        <p class="empty-cart">
+            Your cart is empty.
+        </p>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">
+                ₦0
+            </strong>
+
+        </div>
+
+
+        <button class="checkout-btn" id="checkoutBtn">
+    Proceed to Checkout
+        </button>
+
+    </div>
+
+</div>
+
+    <script src="home.js"></script>
+</body>
+</html>

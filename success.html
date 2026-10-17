@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CraveHub | Order Confirmed</title>
+
+    <link rel="stylesheet" href="success.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="logo">Crave<span>Hub</span></div>
+
+      <a href="home.html">
+        <i class="fa-solid fa-house"></i>
+        Back to Menu
+      </a>
+    </nav>
+<main class="success-container">
+    <div class="success-box">
+
+        <div class="success-icon">
+            <i class="fa-solid fa-check"></i>
+        </div>
+
+        <h1>Order Placed!</h1>
+
+        <p>
+            Thank you, <strong id="customerName"></strong>!
+        </p>
+
+        <p>
+            Your order has been received and
+            we'll get it ready for you.
+        </p>
+
+        <div class="delivery-details">
+
+            <h2>Delivery Information</h2>
+
+            <div class="detail-row">
+                <span>Name</span>
+                <strong id="successName"></strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Phone</span>
+                <strong id="successPhone"></strong>
+            </div>
+
+            <div class="detail-row">
+                <span>Address</span>
+                <strong id="successAddress"></strong>
+            </div>
+
+        </div>
+
+        <div class="order-summary">
+
+            <h2>Order Summary</h2>
+
+            <div id="successItems"></div>
+
+            <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="successSubtotal">₦0</strong>
+            </div>
+
+            <div class="summary-row">
+                <span>Delivery Fee</span>
+                <strong>₦1,000</strong>
+            </div>
+
+            <div class="success-total">
+                <span>Total</span>
+                <strong id="successTotal">₦0</strong>
+            </div>
+
+        </div>
+
+        <a href="home.html" class="menu-btn">
+            Back to Menu
+        </a>
+
+    </div>
+</main>
+
+    <script src="success.js"></script>
+  </body>
+</html>
